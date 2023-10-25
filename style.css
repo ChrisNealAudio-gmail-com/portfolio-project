@@ -7,25 +7,30 @@
 
 body {
   min-height: 100vh;
-  background: url(Image/pexels-pixabay-355887.jpg) no-repeat;
+  background: url(Image/adrien-olichon-ilVYjf0J378-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
   color: white;
 }
 
+/* Header */
+
 .header {
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
-  background: transparent;
+  padding: 5px 100px;
+  background: grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
+
+/* Navbar */
 
 .name {
   font-size: 55px;
@@ -57,44 +62,69 @@ body {
   color: rgb(157, 157, 221);
 }
 
+/* Home */
+
+section {
+  padding: 0 15%;
+}
+
 .home {
-  height: 50vh;
+  position: relative;
+  width: 100%;
+  height: 70vh;
   display: flex;
   align-items: center;
-  padding: 0 8%;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.headshot {
+  height: 300px;
 }
 
 .home-content {
-  max-width: 700px;
+  margin-right: 100px;
 }
 
 .home-content h1 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .home-content h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 500;
   color: rgb(157, 157, 221);
 }
 
 .home-content p {
-  font-size: 18px;
-  margin-right: 100px;
-  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
+/* Quote */
+
+.quote {
+  text-align: center;
+  font-size: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-style: italic;
+}
+
+/* Bot Links */
+
 .bot-links {
+  background: grey;
   position: absolute;
-  bottom: 40px;
-  width: 170px;
+  bottom: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .bot-links a {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
@@ -105,6 +135,7 @@ body {
   font-size: 35px;
   color: white;
   text-decoration: none;
+  margin: 15px;
 }
 
 .bot-links a:hover {
