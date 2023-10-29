@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   padding: 5px 100px;
-  background: grey;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,17 +48,23 @@ body {
   margin-left: 23px;
 }
 
+.navbar a:hover {
+  color: rgb(157, 157, 221);
+}
+
 .navbar a::before {
   content: "";
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 3px;
-  background: white;
+  background: rgb(157, 157, 221);
+  transition: 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover::before {
+  width: 100%;
   color: rgb(157, 157, 221);
 }
 
@@ -80,6 +86,7 @@ section {
 
 .headshot {
   height: 300px;
+  box-shadow: 0px 0px 10px 10px white;
 }
 
 .home-content {
@@ -102,6 +109,27 @@ section {
   font-weight: 500;
 }
 
+/* Button */
+
+.btn {
+  margin-top: 30px;
+}
+
+.pill {
+  font-size: 18px;
+  padding: 0.2em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background: rgb(157, 157, 221);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pill:hover {
+  background: gray;
+}
 /* Quote */
 
 .quote {
@@ -115,12 +143,13 @@ section {
 /* Bot Links */
 
 .bot-links {
-  background: grey;
+  background: transparent;
   position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 2%;
 }
 
 .bot-links a {
@@ -136,8 +165,74 @@ section {
   color: white;
   text-decoration: none;
   margin: 15px;
+  transition: 0.3s;
 }
 
 .bot-links a:hover {
   color: rgb(157, 157, 221);
+}
+
+/* ABOUT PAGE */
+
+.about {
+  height: 80vh;
+  margin-top: 120px;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* GOLF about page */
+
+.golf {
+  display: flex;
+  justify-content: space-between;
+}
+
+.golf h2 {
+  font-size: 30px;
+}
+
+.golf-img {
+  height: 225px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+/* SPORTS CARDS about page */
+
+.sports-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sports-cards h2 {
+  font-size: 30px;
+}
+
+.sports-cards-img {
+  height: 225px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+/* MUSIC about page */
+
+.music {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.music-info h2 {
+  font-size: 30px;
+}
+
+.music-img {
+  height: 225px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
 }
