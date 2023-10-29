@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(Image/adrien-olichon-ilVYjf0J378-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: white;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Navbar */
+
+.name {
+  font-size: 55px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 23px;
+}
+
+.navbar a:hover {
+  color: rgb(157, 157, 221);
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: rgb(157, 157, 221);
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+  color: rgb(157, 157, 221);
+}
+
+/* Home */
+
+section {
+  padding: 0 15%;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.headshot {
+  height: 300px;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+.home-content {
+  margin-right: 100px;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.home-content h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(157, 157, 221);
+}
+
+.home-content p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Button */
+
+.btn {
+  margin-top: 30px;
+}
+
+.pill {
+  font-size: 18px;
+  padding: 0.2em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background: rgb(157, 157, 221);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pill:hover {
+  background: gray;
+}
+/* Quote */
+
+.quote {
+  text-align: center;
+  font-size: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-style: italic;
+}
+
+/* Bot Links */
+
+.bot-links {
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.bot-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  transition: 0.3s;
+}
+
+.bot-links a:hover {
+  color: rgb(157, 157, 221);
+}
+
+/* ABOUT PAGE */
+
+.about {
+  height: 80vh;
+  margin-top: 120px;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* GOLF about page */
+
+.golf {
+  display: flex;
+  justify-content: space-between;
+}
+
+.golf h2 {
+  font-size: 30px;
+}
+
+.golf-img {
+  height: 225px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+/* SPORTS CARDS about page */
+
+.sports-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sports-cards h2 {
+  font-size: 30px;
+}
+
+.sports-cards-img {
+  height: 225px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+/* MUSIC about page */
+
+.music {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.music-info h2 {
+  font-size: 30px;
+}
+
+.music-img {
+  height: 225px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
