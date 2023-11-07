@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Personal Portfolio</title>
   </head>
   <body>
     <header class="header">
@@ -27,36 +27,21 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <div class="contact-title">
-      <h1>Email me and lets connect!</h1>
-    </div>
-    <body>
-      <div class="contact">
-        <div class="coding-1">
-          <img src="Image/Coding-1.webp" alt="coding-1" />
-        </div>
-        <form action="" class="contact-form">
-          <input type="text" placeholder="Name" class="name-input" />
-          <input type="email" placeholder="Email" class="email-inputa" />
-          <textarea
-            name="Email-input"
-            class="email-input"
-            cols="30"
-            rows="10"
-            placeholder="Text Here"
-          ></textarea>
-          <input
-            type="button"
-            value="Send"
-            class="send-input"
-            onclick="location.href='confirmation-page.html'"
-          />
-        </form>
-        <div class="coding-2">
-          <img src="Image/coding-2.jpeg" alt="coding-2" />
+    <section class="confirmation-page">
+      <div class="confirmation">
+        <div class="confirmation-text">
+          <h2>Thanks for the email!</h2>
+          <p>I will contact you back shortly.</p>
         </div>
       </div>
-    </body>
+      <form
+        class="confirmation-button"
+        action="index.html"
+        onclick="location.href='index.html'"
+      >
+        <input type="button" value="Home" class="con-btn" />
+      </form>
+    </section>
     <footer>
       <div class="bot-links">
         <a href="https://www.linkedin.com"> <i class="bx bxl-linkedin"></i></a>
@@ -66,5 +51,6 @@
         <a href="https://github.com/"><i class="bx bxl-github"></i></a>
       </div>
     </footer>
+    <script src="javascript.js"></script>
   </body>
 </html>
